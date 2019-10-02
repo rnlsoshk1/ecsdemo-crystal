@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ecsdemo-crystal
+  name: ecsdemo-crystal-dev
   labels:
     app: ecsdemo-crystal
-  namespace: default
+  namespace: dev
 spec:
   replicas: 1
   selector:
@@ -21,7 +21,7 @@ spec:
         app: ecsdemo-crystal
     spec:
       containers:
-      - image: brentley/ecsdemo-crystal:latest
+      - image: rnlsoshk1/crystal:latest
         imagePullPolicy: Always
         name: ecsdemo-crystal
         ports:
