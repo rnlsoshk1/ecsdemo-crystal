@@ -4,7 +4,7 @@ metadata:
   name: ecsdemo-crystal-canary
   labels:
     app: ecsdemo-crystal
-  namespace: canary
+  namespace: production
 spec:
   replicas: 1
   selector:
